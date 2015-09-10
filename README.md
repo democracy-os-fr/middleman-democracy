@@ -9,3 +9,5 @@
 - bundle update
 
 - bundle exec middleman server
+
+- go to http://localhost:4567
