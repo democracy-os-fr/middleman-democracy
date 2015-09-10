@@ -1,7 +1,11 @@
 # middleman-democracy
 
-1- Clone repository
+- gem install middleman
 
-2- bundle update
+- clone repository( git clone + SSH clone url)
 
-3- bundle exec middleman server
+- cd middleman-democracy
+
+- bundle update
+
+- bundle exec middleman server
