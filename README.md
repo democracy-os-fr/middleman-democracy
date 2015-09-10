@@ -1,5 +1,4 @@
 # middleman-democracy
-Middleman challenge for Le Wagon fullstack students
 
 1- Clone repository
 
