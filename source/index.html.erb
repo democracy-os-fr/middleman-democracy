@@ -27,6 +27,8 @@ title: DemocracyOS France
         </div>
       </h1>
     </section>
+
+      <!-- Nav tabs -->
       <ul class="nav nav-pills nav-justified padded-top" role="tablist">
         <li role="presentation" class="active"><a href="#technology" aria-controls="technology" role="tab" data-toggle="tab">Technology</a></li>
         <li role="presentation"><a href="#team" aria-controls="team" role="tab" data-toggle="tab">Team</a></li>
@@ -38,27 +40,22 @@ title: DemocracyOS France
   </div>
 </div>
 
-      <!-- Nav tabs -->
-
-
       <!-- Tab panes -->
 <div class="tab-content">
-  <div role="tabpanel" class="tab-pane fade in active" id="technology">Technology...</div>
-  <div role="tabpanel" class="tab-pane fade" id="team">Team</div>
-  <div role="tabpanel" class="tab-pane fade" id="projects">Projects</div>
-  <div role="tabpanel" class="tab-pane fade" id="supportus">Support Us</div>
-  <div role="tabpanel" class="tab-pane fade" id="contact">Contact</div>
-</div>
-
-
-<div class="padded-top">
-  <div class="container">
-    <div class="col-xs-12">
-      <h2>DemocracyOS est l’application open-source de prise de décision collaborative la plus utilisée dans le monde.</h2>
-      <p>Son but est de favoriser la participation de tous à la fabrique de décisions politiques, à l'heure où internet a changé presque tous les aspects de notre vie quotidienne... sauf le fonctionnement de nos démocraties.</p>
-      <p>Inventée en 2012 par des développeurs et politologues en Argentine, elle est reprise depuis à travers le monde: Mexique, États-Unis, Espagne... et désormais en France.</p>
-      <p>L’application DemocracyOS est indépendante, entièrement gratuite, facile d’utilisation, et modifiable. Son code source est ouvert à tous.</p>
-    </div>
+  <div role="tabpanel" class="tab-pane fade in active" id="technology">
+    <%= partial "technology" %>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="team">
+    <%= partial "team" %>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="projects">
+    <%= partial "projects" %>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="supportus">
+    <%= partial "supportus" %>
+  </div>
+  <div role="tabpanel" class="tab-pane fade" id="contact">
+    <%= partial "contact" %>
   </div>
 </div>
 
