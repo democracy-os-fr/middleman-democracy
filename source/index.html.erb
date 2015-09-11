@@ -3,33 +3,38 @@ title: DemocracyOS France
 ---
 <div class="banner text-center">
   <div class="banner-shadow"></div>
-  <div class="banner-content fade-and-slide">
-    <div id="social" class="col-xs-4 col-xs-offset-8">
-      <ul class="list-inline">
-        <li><a href="https://www.facebook.com/DemocracyOSfrance"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="https://twitter.com/democracyos_fr"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://www.youtube.com/channel/UCeHjr4rj-YN-THvXAqJL5hg"><i class="fa fa-youtube"></i></a></li>
-        <li><a href="https://medium.com/@DemocracyOS_FR"><i class="fa fa-medium"></i></a></li>
-      </ul>
-    </div>
-    <div class="padded-top">
-      <%= image_tag "logo-w.png" %>
-    <section class="rw-wrapper padded-top">
-      <h1 class="rw-sentence">
-        <span>Une démocratie</span>
-        <div class="rw-words rw-words-1">
-          <span>&nbsp;</span>
-          <span>&nbsp;participative</span>
-          <span>&nbsp;citoyenne</span>
-          <span>&nbsp;directe</span>
-          <span>&nbsp;pour le XXIe siècle</span>
-          <span>.</span>
+    <div class="banner-content">
+        <div id="social" class="col-xs-4 col-xs-offset-8">
+          <ul class="list-inline">
+            <li><a href="https://www.facebook.com/DemocracyOSfrance"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/democracyos_fr"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCeHjr4rj-YN-THvXAqJL5hg"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://medium.com/@DemocracyOS_FR"><i class="fa fa-medium"></i></a></li>
+          </ul>
         </div>
+        <div class="padded-top">
+          <%= image_tag "logo-w.png" %>
+        </div>
+
+      <div class="fade-and-slide">
+      <!-- Rotating sentence -->
+      <section class="rw-wrapper padded-bottom">
+        <h1 class="rw-sentence">
+          <span>Une démocratie</span>
+          <div class="rw-words rw-words-1">
+            <span>&nbsp;</span>
+            <span>&nbsp;participative</span>
+            <span>&nbsp;citoyenne</span>
+            <span>&nbsp;directe</span>
+            <span>&nbsp;pour le XXIe siècle</span>
+            <span>.</span>
+          </div>
       </h1>
-    </section>
+      </section>
+      </div>
 
       <!-- Nav tabs -->
-      <ul class="nav nav-pills nav-justified padded-top" role="tablist">
+      <ul class="nav nav-tabs nav-justified" role="tablist">
         <li role="presentation" class="active"><a href="#technology" aria-controls="technology" role="tab" data-toggle="tab">Technology</a></li>
         <li role="presentation"><a href="#team" aria-controls="team" role="tab" data-toggle="tab">Team</a></li>
         <li role="presentation"><a href="#projects" aria-controls="projects" role="tab" data-toggle="tab">Projects</a></li>
@@ -170,25 +175,3 @@ title: DemocracyOS France
   </form>
 </div>
 
-<div id="map" style="width: 100%;height: 300px;"></div>
-
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-<script type="text/javascript">
-var myLatlng = new google.maps.LatLng(48.887285, 2.354631);
-
-var myOptions = {
-  zoom: 16,
-  center: myLatlng,
-  scrollwheel: false,
-  mapTypeId: google.maps.MapTypeId.ROADMAP,
-  styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
-};
-
-var map = new google.maps.Map(document.getElementById('map'), myOptions);
-var marker = new google.maps.Marker({
-  position: myLatlng,
-  map: map,
-  title:"You are here!"
-});
-</script>
